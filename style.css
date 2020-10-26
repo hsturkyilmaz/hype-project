@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+body {
+  background-image: url('/assets/background-image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+::selection {
+  color: #ffa502;
+  background: #737373;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 41px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.navigation-tabs {
+  width: 408px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+}
+
+.tablink {
+  width: 50%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.01);
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 1.4px;
+  cursor: pointer;
+	outline: inherit;
+}
+
+.tablink:hover {
+  background-color: rgba(115, 115, 115, 0.4);
+}
+
+.tablink:nth-child(1) {
+  border-radius: 100px 0px 0px 100px;
+}
+
+.tablink:nth-child(2) {
+  border-radius: 0px 100px 100px 0px; 
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;  
+}
+
+.carousel-inner {
+  width: 1100px!important;
+  height: 189px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 63px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: -30px!important;
+}
+
+.carousel-control {
+  width: 0;
+  height: 0;
+  margin-top: 80px;
+}
+
+.carousel-indicators {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 120px 0 120px !important;
+  left: 0 !important;
+}
+
+.cards {
+  width: 320px !important;
+  height: 120px !important;
+  background: rgba(34, 35, 40, 0.7) !important;
+  mix-blend-mode: normal !important;
+  border-radius: 5px !important;
+  box-shadow: 0px 29px 55px rgba(0, 0, 0, 0.69) !important;
+  border: none !important;
+}
+
+.cards:hover {
+  background: rgba(115, 115, 115, 0.6) !important;
+}
+
+.cards-content {
+  display: flex;
+  width: 320px;
+  height: 120px;  
+  text-indent: 0;
+}
+
+.cards-content:hover {
+  color: #4F5362 !important;
+}
+
+.card-picture {
+  margin: 24px 20px 26px 25px;
+}
+
+.card-name {
+  margin-top: 20px;
+  height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.card-company {
+  height: 24px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1.2px;
+  color: #A8ACB9;
+  float: left;
+}
+
+.card-logos {
+  font-size: 18px;
+  width: 93px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Hasan Sezai Turkyilmaz">
+  <title>Singleton</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap" rel="stylesheet">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/572863b007.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <!-- Bootstrap & jQuery -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- JavaScript -->
+  <script type="text/javascript" src="/main.js"></script>
+</head>
+<body onload="document.querySelector('#defaultOpen').click();">
+  <div class="page">
+    <div class="header">
+      <div class="header-logo">
+        <img src="/assets/logo.svg" alt="">
+      </div>
+    </div>
+
+    <div class="navigation">
+      <div class="navigation-tabs">
+        <button class="tablink" onclick="openPage('Testimonials', this, '#FFFFFF', '#4F5362')" id="defaultOpen">TESTIMONIALS</button>
+        <button class="tablink" onclick="openPage('Feedbacks', this, '#FFFFFF', '#4F5362')">FEEDBACKS</button>
+      </div>
+    </div>
+    <div id="Testimonials" class="tabcontent">
+      <div class="slider">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+          <div class="container carousel-inner">
+            <div class="item active">
+              “Your affordability calculator saved me some serious time to focus on what I can actually buy.”
+            </div>
+            <div class="item">
+              “Your affordability calculator saved me some serious time to focus on what I can actually buy.”
+            </div>
+            <div class="item">
+              “Your affordability calculator saved me some serious time to focus on what I can actually buy.”
+            </div>
+          </div>
+
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <i class="fas fa-chevron-left"></i>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+
+        </div>
+        <div class="carousel-indicators">
+          <li class="cards" data-target="#myCarousel" data-slide-to="0">
+            <div class="cards-content">
+              <div class="card-picture">
+                <img src="/assets/william.svg" alt="">
+              </div>
+              <div class="card-contact">
+                <div class="card-name">William Ayrton</div>
+                <div class="card-company">APPLE</div><br>
+                <br>
+                <div class="card-logos">
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-google-plus-g"></i>
+                  <i class="fab fa-dribbble"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cards" data-target="#myCarousel" data-slide-to="1">
+            <div class="cards-content">
+              <div class="card-picture">
+                <img src="/assets/jake.svg" alt="">
+              </div>
+              <div class="card-contact">
+                <div class="card-name">Jake Blare</div>
+                <div class="card-company">GOOGLE</div><br>
+                <br>
+                <div class="card-logos">
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-dribbble"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cards" data-target="#myCarousel" data-slide-to="2">
+            <div class="cards-content">
+              <div class="card-picture">
+                <img src="/assets/isabella.svg" alt="">
+              </div>
+              <div class="card-contact">
+                <div class="card-name">Isabella Cook</div>
+                <div class="card-company">TESLA</div><br>
+                <br>
+                <div class="card-logos">
+                  <i class="fab fa-twitter"></i>
+                </div>
+              </div>
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <div id="Feedbacks" class="tabcontent">
+        <div class="slider">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <div class="container carousel-inner">
+                <div class="item active">
+                  “Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, porro eligendi! Amet!”
+                </div>
+                <div class="item">
+                  “Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, porro eligendi! Amet!”
+                </div>
+                <div class="item">
+                  “Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, porro eligendi! Amet!”
+                </div>
+              </div>
+
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <i class="fas fa-chevron-left"></i>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+
+            </div>
+            <div class="carousel-indicators">
+              <li class="cards" data-target="#myCarousel" data-slide-to="0">
+                <div class="cards-content">
+                  <div class="card-picture">
+                    <img src="/assets/isabella.svg" alt="">
+                  </div>
+                  <div class="card-contact">
+                    <div class="card-name">Veronica Donovan</div>
+                    <div class="card-company">UBER</div><br>
+                    <br>
+                    <div class="card-logos">
+                      <i class="fab fa-dribbble"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards" data-target="#myCarousel" data-slide-to="1">
+                <div class="cards-content">
+                  <div class="card-picture">
+                    <img src="/assets/william.svg" alt="">
+                  </div>
+                  <div class="card-contact">
+                    <div class="card-name">Tony Gatlif</div>
+                    <div class="card-company">INSTAGRAM</div><br>
+                    <br>
+                    <div class="card-logos">
+                      <i class="fab fa-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards" data-target="#myCarousel" data-slide-to="2">
+                <div class="cards-content">
+                  <div class="card-picture">
+                    <img src="/assets/jake.svg" alt="">
+                  </div>
+                  <div class="card-contact">
+                    <div class="card-name">Jimmy Fallon</div>
+                    <div class="card-company">YAHOO</div><br>
+                    <br>
+                    <div class="card-logos">
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-facebook-f"></i>
+                      <i class="fab fa-dribbble"></i>
+                    </div>
+                  </div>
+              </li>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
